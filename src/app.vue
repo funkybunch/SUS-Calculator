@@ -326,6 +326,10 @@ footer p span.credit {
   margin: 0;
 }
 
+.footer-container p {
+  margin-top: 0;
+}
+
 .logo img {
   margin: 0 0 0 8px;
   max-width: 80px;
