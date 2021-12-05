@@ -2,7 +2,7 @@
   <div class="main-continer">
     <header>
       <div class="flex-container">
-        <h1>System Usability Scale (SUS) Calculator</h1>
+        <h1>System Usability Scale (SUS) Score Calculator</h1>
       </div>
     </header>
     <main>
