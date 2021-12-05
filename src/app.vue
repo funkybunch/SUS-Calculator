@@ -44,7 +44,7 @@
           </span>
           </div>
         </div>
-        <p><span>Calculator made with &hearts; by</span> <img src="https://cdn.markadkins.design/images/ma_portfolio_logo_light.svg" alt="Mark Adkins Design"></p>
+        <p><span class="credit">Calculator made with &hearts; by</span> <img src="https://cdn.markadkins.design/images/ma_portfolio_logo_light.svg" alt="Mark Adkins Design"></p>
 
       </div>
     </footer>
@@ -320,6 +320,10 @@ footer p {
 
 footer p span {
   margin: 12px 0 0 0;
+}
+
+footer p span.credit {
+  margin: 0;
 }
 
 .logo img {
