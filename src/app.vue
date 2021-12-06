@@ -177,7 +177,7 @@ body {
 }
 
 .flex-container {
-  width: 95%;
+  width: 90%;
   max-width: 600px;
   display: flex;
   justify-content: center;
@@ -189,6 +189,14 @@ header, footer {
   background-color: #1a36bb;
   display: flex;
   justify-content: center;
+}
+
+header {
+  background-color: #020829;
+}
+
+header .flex-container {
+  max-width: 800px;
 }
 
 footer {
@@ -203,14 +211,14 @@ footer {
 .footer-container {
   display: flex;
   flex-direction: column;
-  width: 96%;
+  width: 90%;
   max-width: 800px;
   margin: auto;
 }
 
 main {
   color: #000000;
-  padding-top: 10vh;
+  padding-top: 36px;
   padding-bottom: 30vh;
   display: flex;
   justify-content: center;
@@ -336,7 +344,23 @@ footer p span.credit {
 }
 
 header h1 {
-  margin-top: 12px;
+  margin: 12px 0 12px 0;
   font-weight: normal;
+}
+
+@media screen and (max-width: 800px) {
+  .scores {
+    flex-direction: column;
+  }
+  .scores div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  .score-value {
+    margin-top: 8px;
+  }
 }
 </style>
