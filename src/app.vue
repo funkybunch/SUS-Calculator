@@ -44,7 +44,7 @@
           </span>
           </div>
         </div>
-        <p><span class="credit">Calculator made with &hearts; by</span> <img src="https://cdn.markadkins.design/images/ma_portfolio_logo_light.svg" alt="Mark Adkins Design"></p>
+        <p><span class="credit">Calculator made with &hearts; by</span> <a href="https://markadkins.design" target="_blank"><img src="https://cdn.markadkins.design/images/ma_portfolio_logo_light.svg" alt="Mark Adkins Design"></a></p>
 
       </div>
     </footer>
