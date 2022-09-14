@@ -2,7 +2,8 @@
   <div class="main-continer">
     <header>
       <div class="flex-container">
-        <h1>System Usability Scale (SUS) Score Calculator</h1>
+        <img class="logo" src="https://cdn.markadkins.design/images/sus.svg" />
+        <h1>System Usability Scale (SUS) <span>Score Calculator</span></h1>
       </div>
     </header>
     <main>
@@ -189,14 +190,34 @@ header, footer {
   background-color: #1a36bb;
   display: flex;
   justify-content: center;
+
+}
+
+header > .flex-container {
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  max-width: 740px;
+  gap: 24px;
+}
+
+.flex-container > img.logo {
+  max-width: 50px;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+header h1 span {
+  font-weight: normal;
+  display: block;
+  font-size: 18px;
 }
 
 header {
   background-color: #020829;
-}
-
-header .flex-container {
-  max-width: 800px;
 }
 
 footer {
@@ -206,13 +227,14 @@ footer {
   justify-content: center;
   bottom: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 .footer-container {
   display: flex;
   flex-direction: column;
   width: 90%;
-  max-width: 800px;
+  max-width: 740px;
   margin: auto;
 }
 
@@ -238,33 +260,52 @@ main input[type="range"] {
   margin-top: 12px;
   -webkit-appearance: none;
   appearance: none;
-  height: 16px;
-  border-radius: 8px;
-  background: #c5c5c5;
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(150,150,150,0.4);
   outline: none;
   opacity: 0.7;
   -webkit-transition: .2s;
   transition: opacity .2s;
+  position: relative;
+  z-index: 50;
+}
+
+main > .flex-container > div {
+  border-bottom: 2px solid #e9e9e9;
+  margin-bottom: 24px;
 }
 
 main input[type="range"] {
   opacity: 1;
 }
+
 main input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 25px;
-  height: 25px;
-  background: #1a36bb;
+  width: 16px;
+  height: 16px;
+  background: #1fb3db;
   cursor: pointer;
   border-radius: 50%;
+  transition-timing-function: ease-in-out;
+  transition-property: all;
+  transition-duration: 100ms;
+}
+main input[type="range"]::-webkit-slider-thumb:hover {
+  box-shadow: 0px 0px 0px 8px rgba(75, 206, 242, 0.55);
 }
 
 main input[type="range"]::-moz-range-thumb {
   width: 25px;
   height: 25px;
+  appearance: none;
   background: #1a36bb;
   cursor: pointer;
+  border-radius: 50%;
+  transition-timing-function: ease-in-out;
+  transition-property: all;
+  transition-duration: 100ms;
 }
 
 .range-labels {
@@ -343,9 +384,8 @@ footer p span.credit {
   max-width: 80px;
 }
 
-header h1 {
-  margin: 12px 0 12px 0;
-  font-weight: normal;
+.footer-container a {
+  display: flex;
 }
 
 @media screen and (max-width: 800px) {
